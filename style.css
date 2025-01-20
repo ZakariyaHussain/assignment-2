@@ -1,5 +1,242 @@
+
+/* Google font link */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand{
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 *{
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+}
+/* shared style */
+.display-fex{
+    display: flex;
+}
+.common-btn{
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    padding: 10px 47px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.88rem;
+    border: none;
+}
+.section-title{
+    font-weight: 700;
+    font-size: 2.88rem;
+    line-height: 3.6rem;
+    color: #000000;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+/* navbar style */
+header{
+    max-width: 1160px;
+    margin: 0 auto;
+    /* border: 1px solid tomato; */
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.logo{
+    gap: 10px;
+    align-items: center;
+}
+.logo-title{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.88rem;
+}
+.menu{
+    gap: 32px;
+}
+.menu-item{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.88rem;
+}
+.link1{
+    color: orange;
+}
+.link2{
+    color: aquamarine;
+}
+.link3{
+    color: tomato;
+}
+.link4{
+    color: yellowgreen;
+}
+.nav-btn{
+    padding: 10px 60px;
+    background-color: orange;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.88rem;
+    color: white;
+    cursor: pointer;
+}
+.hamburger{
+    font-size: 2rem;
+    display: none;
+}
+
+/* Banner section */
+#banner{
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 3.8rem;
+}
+.empower{
+    color: orange;
+}
+.vision{
+    color: skyblue;
+}
+.banner-description{
+    font-size: 1.25rem;
+    margin: 24px 0;
+}
+.banner-image img{
+    width: 100%;
+}
+
+/* Curriculum start */
+#curriculum{
+    max-width: 1160px;
+    margin: 0 auto;
+    background-image: url(assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card{
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.card1{
+    text-align: center;
+    border-radius: 19px;
+    background-image: linear-gradient(to bottom, rgba(222, 245, 255, 1), rgba(255, 255, 255, 0));
+    padding: 50px 30px;
+    border: 1px solid #DEF5FF;
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.9rem;
+    color: #202020;
+    margin-top: 32px;
+}
+.card-description{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+    margin: 34px 0;
+    
+}
+.card-btn{
+    color: #64C8FF;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+.btn2{
+    color: #F0AA00;
+}
+.btn3{
+    color: #8700FF;
+}
+.card2{
+    text-align: center;
+    border-radius: 19px;
+    background-image: linear-gradient(to bottom, rgba(255, 244, 220, 1), rgba(255, 255, 255, 0));
+    padding: 50px 30px;
+    border: 1px solid #FFF4DC;
+}
+.card3{
+    text-align: center;
+    border-radius: 19px;
+    background-image: linear-gradient(to bottom, rgba(238, 225, 255, 1), rgba(255, 255, 255, 0));
+    padding: 50px 30px;
+    border: 1px solid #F2E8FF;
+}
+.arrow{
+    justify-content: center;
+    gap: 10px;
+}
+.left-arrow, .right-arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    position: relative;
+}
+.left-arrow i, .right-arrow i{
+    position: absolute;
+    color: white;
+    font-size: 1.5rem;
+    top: 14px;
+    left: 17px;
+}
+/* Responsive Design Start */
+@media screen and (max-width: 768px){
+    .navbar{
+        padding: 20px 0;
+        border-bottom: .5px solid orange;
+    }
+    .logo-title,
+    .menu,
+    .nav-btn{
+        display: none;
+    }
+    .hamburger{
+        font-size: 2rem;
+        display: block;
+    }
+    /* Banner start */
+    #banner{
+        /* justify-content: space-between;
+        align-items: center; */
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    /* Curriculum section */
+    .card{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .arrow{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px){
+
 }
