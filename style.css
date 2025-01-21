@@ -1,11 +1,21 @@
 
 /* Google font link */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/* raleway font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 .quicksand{
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+.raleway{
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.8rem;
 }
 *{
     margin: 0;
@@ -19,6 +29,7 @@ body{
 .display-fex{
     display: flex;
 }
+
 .common-btn{
     background-color: black;
     color: white;
@@ -203,6 +214,94 @@ header{
     top: 14px;
     left: 17px;
 }
+
+/* Story start */
+#story{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    background-image: url(assets/bg.png), linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(254, 163, 1, 0.3));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.story-cards{
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+}
+.left-card, .right-card{
+    background-color: white;
+    border-radius: 16px;
+}
+.story-left{
+    width: 47%;
+}
+.story-left img, .story-right img{
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+.story-btn-content{
+    position: relative;
+    flex-direction: column;
+    padding: 38px;
+}
+.story-btn{
+    background-color: orange;
+    color: white;
+    border-radius: 48px;
+    padding: 15px 28px;
+    border: none;
+    position: absolute;
+    left: 38px;
+    top: -35px;
+}
+.story-card-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: #000000;
+    
+}
+.story-card-description{
+    color: #666666;
+    margin-top: 48px;
+}
+.story-right{
+    width: 53%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+.story-right h3{
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+.right-card-btn-1{
+    padding: 7px 19px;
+    background-color: tomato;
+    top: -28px;
+}
+.right-card-btn-2{
+    padding: 7px 19px;
+    background-color: crimson;
+    top: -28px;
+}
+.right-card-btn-3{
+    padding: 7px 19px;
+    background-color: chartreuse;
+    top: -28px;
+}
+.right-card-btn-4{
+    padding: 7px 19px;
+    background-color: peru;
+    top: -28px;
+}
+.story-main-btn{
+    text-align: center;
+    margin-top: 80px;
+}
+
 /* Responsive Design Start */
 @media screen and (max-width: 768px){
     .navbar{
@@ -220,8 +319,6 @@ header{
     }
     /* Banner start */
     #banner{
-        /* justify-content: space-between;
-        align-items: center; */
         flex-direction: column-reverse;
     }
     .banner-content{
@@ -234,6 +331,28 @@ header{
     }
     .arrow{
         display: none;
+    }
+    /* Story start */
+    .story-cards{
+        flex-direction: column;
+    }
+    .story-btn-content{
+        padding: 10px;
+    }
+    .story-btn{
+        left: 10px;
+    }
+    .story-left{
+        display: none;
+    }
+    .story-right{
+        width: 100%;
+        gap: 12px;
+    }
+    .story-right h3{
+        margin-top: 20px;
+        font-size: .85rem;
+        line-height: 1.3rem;
     }
 }
 
