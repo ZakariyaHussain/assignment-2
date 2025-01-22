@@ -140,6 +140,17 @@ header{
 .banner-image img{
     width: 100%;
 }
+marquee{
+    direction: left;
+    margin-top: 30px;
+    background-color: #fea301;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    word-spacing: .5rem;
+    padding: 5px 0;
+}
 
 /* Curriculum start */
 #curriculum{
@@ -192,6 +203,9 @@ header{
 .btn3{
     color: #8700FF;
 }
+.card-link{
+    text-decoration: none;
+}
 .card2{
     text-align: center;
     border-radius: 19px;
@@ -216,6 +230,11 @@ header{
     border-radius: 50%;
     background-color: orange;
     position: relative;
+    cursor: pointer;
+    transition: .5s;
+}
+.left-arrow:hover, .right-arrow:hover{
+    transform: scale(1.2);
 }
 .left-arrow i, .right-arrow i{
     position: absolute;
@@ -373,6 +392,9 @@ footer{
     }
     .banner-image{
         width: 100%;
+    }
+    .marquee{
+        padding: 0 10px;
     }
     /* Curriculum section */
     .curriculum{
